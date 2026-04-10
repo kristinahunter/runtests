@@ -244,7 +244,7 @@ resource "google_compute_instance" "app" {
   }
 }
 
-# Bastion host (public subnet, minimal footprint)
+# Bastion host (public subnet, minimal footprint) comment
 resource "google_compute_instance" "bastion" {
   name         = "${var.env}-bastion-01"
   machine_type = var.bastion_machine_type
