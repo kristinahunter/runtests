@@ -1,0 +1,17 @@
+project_id = "my-gcp-project-id"
+region     = "us-central1"
+env        = "dev"
+
+public_subnet_cidr  = "10.0.1.0/24"
+private_subnet_cidr = "10.0.2.0/24"
+
+web_machine_type     = "e2-small"
+app_machine_type     = "e2-standard-2"
+bastion_machine_type = "e2-micro"
+
+common_labels = {
+  managed-by  = "terraform"
+  environment = "dev"
+  team        = "platform"
+  cost-center = "engineering"
+}
