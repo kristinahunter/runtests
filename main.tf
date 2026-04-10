@@ -13,7 +13,7 @@ provider "google" {
   region  = var.region
 }
 
-# ─── VPC Network ─────────────────────────────────────────────────────────────
+# ─── VPC Network  ─────────────────────────────────────────────────────────────
 
 resource "google_compute_network" "main" {
   name                    = "${var.env}-vpc"
